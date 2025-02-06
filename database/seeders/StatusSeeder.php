@@ -14,7 +14,7 @@ class StatusSeeder extends Seeder
     public function run(): void
     {
         Book_status::insert([
-            ''
+            'name' => 'Full relase'
         ]);
     }
 }
