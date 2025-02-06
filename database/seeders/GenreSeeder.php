@@ -14,7 +14,8 @@ class GenreSeeder extends Seeder
     public function run(): void
     {
         Genre::insert([
-            'name' => 'Programming'
+            ['name' => 'Programming'],
+            ['name' => 'Filosofi']
         ]);
     }
 }
