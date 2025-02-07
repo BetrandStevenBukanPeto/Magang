@@ -1,1 +1,27 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Dark mode fix */
+.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark .bg-white {
+    background-color: #1e293b !important;
+    color: white;
+}
+
+.dark .text-gray-500 {
+    color: #cbd5e1 !important;
+}
+
+.dark .bg-gray-200 {
+    background-color: #374151 !important;
+}
