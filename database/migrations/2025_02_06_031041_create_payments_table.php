@@ -18,9 +18,9 @@ return new class extends Migration
             $table->decimal('ship_cost');
             $table->string('ship_option');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            // $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('transaction_id');
-            $table->foreign('transaction_id')->references('id')->on('transactions');
+            // $table->foreign('transaction_id')->references('id')->on('transactions');
             $table->timestamps();
         });
     }
