@@ -20,9 +20,9 @@ return new class extends Migration
             $table->date('date_post');
             $table->text('feedback')->nullable();
             $table->unsignedBigInteger('book_id');
-            $table->foreign('book_id')->references('id')->on('books');
+            // $table->foreign('book_id')->references('id')->on('books');
             $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            // $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

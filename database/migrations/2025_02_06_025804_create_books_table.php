@@ -19,7 +19,7 @@ return new class extends Migration
             $table->longText('body');
             $table->string('publisher');
             $table->unsignedBigInteger('author_id');
-            $table->foreign('author_id')->references('id')->on('authors');
+            // $table->foreign('author_id')->references('id')->on('authors');
             $table->date('release_date');
             $table->decimal('price');
             $table->bigInteger('stock');
@@ -27,7 +27,8 @@ return new class extends Migration
             $table->longText('cover')->nullable();
             $table->decimal('rating');
             $table->unsignedBigInteger('status_id');
-            $table->foreign('status_id')->references('status_id')->on('book_statuses');
+            $table->date('expired');
+            // $table->foreign('status_id')->references('status_id')->on('book_statuses');
             $table->timestamps();
         });
     }
